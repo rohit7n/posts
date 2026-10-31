@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #eee;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 2;
+    -webkit-font-smoothing: antialiased;
+}
+
+.posts {
+    width: min(100% - 40px, 620px);
+    margin: 0 auto;
+    padding: 55px 0;
+}
+
+.post {
+    padding: 24px 0;
+    border-bottom: 1px solid #222;
+}
+
+.post p {
+    overflow-wrap: anywhere;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .posts {
+        width: calc(100% - 36px);
+        padding-top: 30px;
+    }
+
+    .post {
+        padding: 20px 0;
+    }
+}
+
+::selection {
+    background: #fff;
+    color: #000;
+}
